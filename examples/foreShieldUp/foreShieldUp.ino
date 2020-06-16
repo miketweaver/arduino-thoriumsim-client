@@ -33,7 +33,7 @@ void loop() {
   {
     byte inChar;
     inChar = Serial.read();
-    if(inChar == 's') // wait for user to send lettel `s` over serial cable
+    if(inChar == 's') // wait for user to send letter `s` over serial cable
     {
         // get shield ID
         // 1 = fore
