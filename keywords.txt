@@ -1,0 +1,18 @@
+#######################################
+# Syntax Coloring Map For Arduino-ThoriumSim-Client
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+grapql_request  KEYWORD2
+graphql_raw_request     KEYWORD2
+thorium_setup   KEYWORD2
+thorium_loop    KEYWORD2
+ethernet_setup  KEYWORD2
+ethernet_loop   KEYWORD2
