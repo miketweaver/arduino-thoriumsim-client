@@ -6,6 +6,7 @@
 //include HttpRequest object library https://forum.arduino.cc/index.php?topic=197752.msg1506850#msg1506850
 #include <HttpRequest.h>
 #include <ArduinoHttpClient.h>
+#include "Thorium.h"
 
 extern HttpRequest httpReq;
 extern EthernetServer server;
