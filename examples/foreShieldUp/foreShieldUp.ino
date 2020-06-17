@@ -1,10 +1,5 @@
 #include <Thorium.h>
 
-// if you don't want to use DNS (and reduce your sketch size)
-// use the numeric IP instead of the name for the server:
-// IPAddress ip(192, 168, 0, 10);
-char thorium_server[] = "192.168.0.10";    // thorium server address
-int thorium_port = 3001;
 int w5500_cs_pin = 13;
 
 // Enter a MAC address for your controller below.
@@ -23,8 +18,7 @@ void setup() {
   }
 
   // Setup Devices
-  ethernet_setup(thorium_server, thorium_port, ip, myDns, mac, w5500_cs_pin);
-  thorium_setup();
+  thorium_setup(ip, myDns, mac, w5500_cs_pin);
 }
 
 void loop() {
@@ -56,7 +50,6 @@ void loop() {
         graphql_request(query, variables);
     }
   }
-  
-  ethernet_loop();
+
   thorium_loop();
 }
